@@ -15,6 +15,12 @@
 		FEB1FF9F1A276FE800BF29EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB1FF9E1A276FE800BF29EA /* Images.xcassets */; };
 		FEB1FFA21A276FE800BF29EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEB1FFA01A276FE800BF29EA /* LaunchScreen.xib */; };
 		FEB1FFAE1A276FE900BF29EA /* WebSocketTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB1FFAD1A276FE900BF29EA /* WebSocketTestTests.m */; };
+		FEB1FFB81A276FF900BF29EA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB1FFB71A276FF900BF29EA /* CFNetwork.framework */; };
+		FEB1FFBB1A2770A300BF29EA /* KGWebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB1FFBA1A2770A300BF29EA /* KGWebSocket.framework */; };
+		FEB1FFBE1A2773E400BF29EA /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB1FFBD1A2773E400BF29EA /* DataManager.m */; };
+		FEB1FFC11A27753C00BF29EA /* Packet.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB1FFC01A27753C00BF29EA /* Packet.m */; };
+		FEB1FFC51A277CC100BF29EA /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB1FFC41A277CC100BF29EA /* TableViewController.m */; };
+		FEB1FFC81A27947D00BF29EA /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB1FFC71A27947D00BF29EA /* TextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,16 @@
 		FEB1FFA71A276FE900BF29EA /* WebSocketTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSocketTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB1FFAC1A276FE900BF29EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEB1FFAD1A276FE900BF29EA /* WebSocketTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketTestTests.m; sourceTree = "<group>"; };
+		FEB1FFB71A276FF900BF29EA /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FEB1FFBA1A2770A300BF29EA /* KGWebSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KGWebSocket.framework; path = usr/KGWebSocket.framework; sourceTree = "<group>"; };
+		FEB1FFBC1A2773E400BF29EA /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		FEB1FFBD1A2773E400BF29EA /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FEB1FFBF1A27753C00BF29EA /* Packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Packet.h; path = Model/Packet.h; sourceTree = "<group>"; };
+		FEB1FFC01A27753C00BF29EA /* Packet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Packet.m; path = Model/Packet.m; sourceTree = "<group>"; };
+		FEB1FFC31A277CC100BF29EA /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		FEB1FFC41A277CC100BF29EA /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		FEB1FFC61A27947D00BF29EA /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		FEB1FFC71A27947D00BF29EA /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB1FFBB1A2770A300BF29EA /* KGWebSocket.framework in Frameworks */,
+				FEB1FFB81A276FF900BF29EA /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +85,7 @@
 			children = (
 				FEB1FF8D1A276FE800BF29EA /* WebSocketTest */,
 				FEB1FFAA1A276FE900BF29EA /* WebSocketTestTests */,
+				FEB1FFB91A27700100BF29EA /* Frameworks */,
 				FEB1FF8C1A276FE800BF29EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,14 +102,19 @@
 		FEB1FF8D1A276FE800BF29EA /* WebSocketTest */ = {
 			isa = PBXGroup;
 			children = (
-				FEB1FF921A276FE800BF29EA /* AppDelegate.h */,
-				FEB1FF931A276FE800BF29EA /* AppDelegate.m */,
+				FEB1FFC21A27754300BF29EA /* Model */,
 				FEB1FF981A276FE800BF29EA /* ViewController.h */,
 				FEB1FF991A276FE800BF29EA /* ViewController.m */,
+				FEB1FFC31A277CC100BF29EA /* TableViewController.h */,
+				FEB1FFC41A277CC100BF29EA /* TableViewController.m */,
+				FEB1FFC61A27947D00BF29EA /* TextViewController.h */,
+				FEB1FFC71A27947D00BF29EA /* TextViewController.m */,
 				FEB1FF9B1A276FE800BF29EA /* Main.storyboard */,
 				FEB1FF9E1A276FE800BF29EA /* Images.xcassets */,
 				FEB1FFA01A276FE800BF29EA /* LaunchScreen.xib */,
 				FEB1FF951A276FE800BF29EA /* WebSocketTest.xcdatamodeld */,
+				FEB1FFBC1A2773E400BF29EA /* DataManager.h */,
+				FEB1FFBD1A2773E400BF29EA /* DataManager.m */,
 				FEB1FF8E1A276FE800BF29EA /* Supporting Files */,
 			);
 			path = WebSocketTest;
@@ -99,6 +123,8 @@
 		FEB1FF8E1A276FE800BF29EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FEB1FF921A276FE800BF29EA /* AppDelegate.h */,
+				FEB1FF931A276FE800BF29EA /* AppDelegate.m */,
 				FEB1FF8F1A276FE800BF29EA /* Info.plist */,
 				FEB1FF901A276FE800BF29EA /* main.m */,
 			);
@@ -120,6 +146,24 @@
 				FEB1FFAC1A276FE900BF29EA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEB1FFB91A27700100BF29EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEB1FFBA1A2770A300BF29EA /* KGWebSocket.framework */,
+				FEB1FFB71A276FF900BF29EA /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB1FFC21A27754300BF29EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEB1FFBF1A27753C00BF29EA /* Packet.h */,
+				FEB1FFC01A27753C00BF29EA /* Packet.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,9 +267,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB1FF941A276FE800BF29EA /* AppDelegate.m in Sources */,
+				FEB1FFBE1A2773E400BF29EA /* DataManager.m in Sources */,
 				FEB1FF911A276FE800BF29EA /* main.m in Sources */,
+				FEB1FFC81A27947D00BF29EA /* TextViewController.m in Sources */,
 				FEB1FF9A1A276FE800BF29EA /* ViewController.m in Sources */,
 				FEB1FF971A276FE800BF29EA /* WebSocketTest.xcdatamodeld in Sources */,
+				FEB1FFC51A277CC100BF29EA /* TableViewController.m in Sources */,
+				FEB1FFC11A27753C00BF29EA /* Packet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +322,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -301,11 +349,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 i386";
 			};
 			name = Debug;
 		};
@@ -316,7 +366,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -337,11 +387,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 i386";
 			};
 			name = Release;
 		};
@@ -349,6 +402,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr",
+				);
 				INFOPLIST_FILE = WebSocketTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +417,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr",
+				);
 				INFOPLIST_FILE = WebSocketTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +481,7 @@
 				FEB1FFB31A276FE900BF29EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEB1FFB41A276FE900BF29EA /* Build configuration list for PBXNativeTarget "WebSocketTestTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +490,7 @@
 				FEB1FFB61A276FE900BF29EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
